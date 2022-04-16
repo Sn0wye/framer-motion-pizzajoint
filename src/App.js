@@ -27,6 +27,7 @@ function App() {
     <>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route
           path="/base"
           element={<Base addBase={addBase} pizza={pizza} />}
@@ -36,8 +37,6 @@ function App() {
           element={<Toppings addTopping={addTopping} pizza={pizza} />}
         />
         <Route path="/order" element={<Order pizza={pizza} />} />
-
-        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );
